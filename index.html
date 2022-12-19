@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css"></style>
+</head>
+<body>
+    <h1>Clayton Hoag, Coder</h1>
+    <div id="container">
+        <div class="item" onmouseover="tooltip('Calculator')" onmouseleave="tooltipLeave()" onclick="window.open('https://cl4yt0nn.github.io/Calculator/')"><img src="./calc.png"></div>
+        <div class="item" onmouseover="tooltip('Minesweeper')" onmouseleave="tooltipLeave()" onclick="window.open('https://cl4yt0nn.github.io/Minesweeper/')"><img src="./minesweeper.png"></div>
+        <div class="item" onmouseover="tooltip('Simon')" onmouseleave="tooltipLeave()" onclick="window.open('https://cl4yt0nn.github.io/Simon/')"><img src="./simon.png"></div>
+        <div class="item" onmouseover="tooltip('CSS Animation')" onmouseleave="tooltipLeave()" onclick="window.open('https://cl4yt0nn.github.io/pandaAnimation/')"><img src="./panda.png"></div>
+        <div class="item" onmouseover="tooltip('Quiz App')" onmouseleave="tooltipLeave()" onclick="window.open('https://cl4yt0nn.github.io/quizApp/')"><img src="./quiz.png"></div>
+        <div class="item" onmouseover="tooltip('Resume')" onmouseleave="tooltipLeave()" onclick="window.open('https://cl4yt0nn.github.io/Resume/')"><img src="./resume.png"></div>
+        <div class="item" onmouseover="tooltip('Photo Gallery')" onmouseleave="tooltipLeave()" onclick="window.open('https://cl4yt0nn.github.io/photo-gallery/')"><img src="./photogallery.png"></div>
+        <div class="item" onmouseover="tooltip('Spice Form')" onmouseleave="tooltipLeave()" onclick="window.open('https://cl4yt0nn.github.io/formSpicy.github.io/')"><img src="./spiceform.png"></div>
+        <div class="item" onmouseover="tooltip('JQuery Website')" onmouseleave="tooltipLeave()" onclick="window.open('https://cl4yt0nn.github.io/JQuery-Website/')"><img src="./jquery.png"></div>
+    </div>
+    <div id="selected" onmouseover="tooltip()" onmouseleave="tooltipLeave()"><h2 id="selectedSubText">Dummy Text</h2></div>
+</body>
+<script src="./index.js"></script>
+</html>

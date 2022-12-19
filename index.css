@@ -1,0 +1,72 @@
+* {
+    font-family:'Quicksand','Segoe UI',sans-serif;
+}
+body {
+    background:linear-gradient(to bottom right, #b8e429, #29e467, #2977e4, #b229e4);
+    background-size:400% 400%;
+    animation:bgMove 15s alternate infinite ease-in-out;
+}
+@keyframes bgMove {
+    0% {background-position:0% 0%}
+    100% {background-position:100% 100%}
+}
+h1 {
+    font-size:3vw;
+    text-align:center;
+    padding:20px;
+    border:5px solid black;
+    width:35vw;
+    margin:auto;
+    background:black;
+    color:white;
+    mix-blend-mode:multiply;
+    margin-top:3vh;
+}
+#container {
+    display:grid;
+    grid-template-columns:auto auto auto;
+    gap:5vw;
+    width:80%;
+    margin-left:10%;
+    margin-top:5vh;
+}
+.item {
+    border:5px solid black;
+    height:22vw;
+    width:22vw;
+    transition:1s;
+    position:relative;
+}
+.item:hover {
+    transition:1s;
+    border:10px solid black;
+    box-shadow:0px 0px 100px black;
+    margin-left:-5px;
+    margin-top:-5px;
+    cursor:pointer;
+}
+.item > img {
+    width:101%;
+    height:101%;
+    object-fit:cover;
+    position:absolute;
+    top:-0.5%;
+    left:-0.5%;
+}
+#selected {
+    position:fixed;
+    top:100vh;
+    width:35%;
+    font-size:2.5vw;
+    left:32.2vw;
+    background:black;
+    text-align:center;
+    transition:0.7s;
+    animation:textColor 15s alternate infinite ease-in-out;
+}
+@keyframes textColor {
+    0% {color:#b8e429; filter:brightness(150%)}
+    33% {color:#29e467; filter:brightness(150%)}
+    67% {color:#2977e4; filter:brightness(150%)}
+    100% {color:#b229e4; filter:brightness(150%)}
+}
